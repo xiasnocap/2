@@ -1241,7 +1241,7 @@ async def mobanzu(op):
                                     a = a + 1
                                     end = '\n'
                                     ma += '┣ ' + str(a) + ". " +a001.getContact(ls).displayName + "\n"
-                                a001.sendReplyMessage(reply,receiver, "┏━ 𐀀 HΞLLTΞRHΞΛD ᴄᴏʀᴘ.\n┣━━━━ List Bots\n"+ma+"┗━ Total [ %s ] Bots" %(str(len(mybots))))
+                                a001.sendReplyMessage(reply,receiver, "┣━━━━ List Bots\n"+ma+"┗━ Total [ %s ] Bots" %(str(len(mybots))))
                         elif hlth == "view bots":
                             if sender in creator or sender in owner or sender in admin or sender in staff:
                                 ma = ""
@@ -1250,7 +1250,7 @@ async def mobanzu(op):
                                     a = a + 1
                                     end = '\n'
                                     ma += '┣ ' + str(a) + ". " +a001.getContact(ls).displayName + "\n"
-                                a001.sendReplyMessage(reply,receiver, "┏━ 𐀀 HΞLLTΞRHΞΛD ᴄᴏʀᴘ.\n┣━━━━ List Bots\n"+ma+"┗━ Total [ %s ] Bots" %(str(len(Bots))))
+                                a001.sendReplyMessage(reply,receiver, "┣━━━━ List Bots\n"+ma+"┗━ Total [ %s ] Bots" %(str(len(Bots))))
                         elif hlth == "view access":
                             if sender in creator or sender in owner or sender in admin or sender in staff:
                                 ma = ""
@@ -1277,7 +1277,7 @@ async def mobanzu(op):
                                     d = d + 1
                                     end = '\n'
                                     md += '┣ ' + str(d) + ". " +a001.getContact(ls).displayName + "\n"
-                                a001.sendReplyMessage(msg.id, to, "┏━ 𐀀 HΞLLTΞRHΞΛD ᴄᴏʀᴘ.\n┣━━━━ List Access\n┣━━━━ Creator\n"+ma+"┣━━━━ Owner\n"+mb+"┣━━━━ Admin\n"+mc+"┣━━━━ Staff\n"+md+"┗━ Total [ %s ] Access" %(str(len(creator)+len(owner)+len(admin)+len(staff))))
+                                a001.sendReplyMessage(msg.id, to, "┣━━━━ List Access\n┣━━━━ Creator\n"+ma+"┣━━━━ Owner\n"+mb+"┣━━━━ Admin\n"+mc+"┣━━━━ Staff\n"+md+"┗━ Total [ %s ] Access" %(str(len(creator)+len(owner)+len(admin)+len(staff))))
                         elif hlth.startswith("add owner"):
                             if sender in creator:
                                 key = eval(msg.contentMetadata["MENTION"])
@@ -1596,7 +1596,7 @@ async def mobanzu(op):
                                     b = b + 1
                                     end = '\n'
                                     mb += '┣ ' + str(b) + ". " +a001.getGroup(ls).name + "\n"
-                                a001.sendReplyMessage(reply, receiver, "┣━━[xɪᴀs sᴇʟғʙᴏᴛ]━━┫'''\n┣━━━━ List Protect\n┣━━━━ Protect Max\n"+ma+"┣━━━━ Strict Mode\n"+mb+"┗━ Total [ %s ] Protection" %(str(len(promax)+len(strictmode))))
+                                a001.sendReplyMessage(reply, receiver, "'''\n┣━━━━ List Protect\n┣━━━━ Protect Max\n"+ma+"┣━━━━ Strict Mode\n"+mb+"┗━ Total [ %s ] Protection" %(str(len(promax)+len(strictmode))))
                         elif hlth == "purge":
                             if sender in creator or sender in owner:
                                 group = a001.getGroup(receiver)
